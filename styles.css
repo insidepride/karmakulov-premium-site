@@ -640,7 +640,12 @@ h3 { font-size: clamp(24px, 2vw, 32px); line-height: 1.2; letter-spacing: -.03em
   .hero__media::after { background: linear-gradient(0deg, var(--night) 1%, rgba(11, 10, 13, .78) 48%, rgba(11, 10, 13, .18) 82%), linear-gradient(90deg, rgba(11, 10, 13, .6), transparent 70%); }
   .hero__media img { object-position: 48% 8%; }
   .hero__content { padding: 190px 0 70px; }
-  h1 { font-size: clamp(50px, 15vw, 84px); }
+  h1 {
+    max-width: 100%;
+    font-size: clamp(38px, 11.5vw, 52px);
+    line-height: .9;
+    letter-spacing: -.055em;
+  }
   h1 span:last-child { margin-left: 0; }
   .hero__lead, .hero__meta, .hero__actions { margin-left: 0; }
   .hero__signature, .scroll-cue { display: none; }
