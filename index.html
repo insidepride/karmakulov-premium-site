@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Михаил Кармакулов | Ведущий мероприятий</title>
+  <meta name="description" content="Одностраничный сайт ведущего мероприятий с квизом расчета стоимости, портфолио, FAQ и контактами.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=premium-3">
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__ring"></div>
+    <div class="loader__text">0%</div>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="В начало">
+      <span class="brand__mark">МК</span>
+      <span class="brand__text">Михаил Кармакулов<small>Ведущий событий</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" aria-label="Навигация">
+      <a href="#about">О ведущем</a>
+      <a href="#quiz">Стоимость</a>
+      <a href="#format">Формат</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="hero__media" aria-hidden="true">
+        <img src="assets/portrait-mic.jpg" alt="">
+      </div>
+      <div class="hero__content">
+        <p class="eyebrow">Ведущий &amp; режиссёр событий <span>Архангельск</span></p>
+        <h1><span>Михаил</span><span>Кармакулов</span></h1>
+        <p class="hero__lead">Создаю события, в которых есть стиль, живые эмоции и место для вашей истории.</p>
+        <div class="hero__meta" aria-label="Форматы мероприятий">
+          <span>Свадьбы</span>
+          <span>Корпоративы</span>
+          <span>Частные события</span>
+        </div>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#quiz">Рассчитать стоимость</a>
+          <a class="button button--ghost" href="#video">Смотреть примеры</a>
+        </div>
+      </div>
+      <p class="hero__signature" aria-hidden="true">MK / events</p>
+      <a class="scroll-cue" href="#video">Листай</a>
+    </section>
+
+    <section class="section video-strip" id="video">
+      <div class="section-head">
+        <p class="eyebrow">Событие в трёх актах</p>
+        <h2>Вместо шаблона — характер именно вашего вечера</h2>
+        <p class="section-lead">Тёплая церемония, точный темп программы и финал, который не хочется заканчивать.</p>
+      </div>
+      <div class="video-grid">
+        <button class="video-card video-card--portrait" type="button" data-video-title="Церемония">
+          <img src="assets/ceremony.jpg" alt="Михаил проводит выездную церемонию">
+          <span class="play" aria-hidden="true">▶</span>
+          <span>Церемония</span>
+          <small>01 / искренне</small>
+        </button>
+        <button class="video-card video-card--atmosphere" type="button" data-video-title="Атмосфера">
+          <img src="assets/mikhail-atmosphere.jpg" alt="Михаил Кармакулов на площадке мероприятия">
+          <span class="play" aria-hidden="true">▶</span>
+          <span>Атмосфера</span>
+          <small>02 / в ритме</small>
+        </button>
+        <button class="video-card video-card--character" type="button" data-video-title="Характер">
+          <img src="assets/mikhail-character.jpg" alt="Портрет Михаила Кармакулова">
+          <span class="play" aria-hidden="true">▶</span>
+          <span>Характер</span>
+          <small>03 / уверенно</small>
+        </button>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about__image">
+        <img src="assets/portrait-seated.jpg" alt="Михаил Кармакулов">
+        <span>Ваш ведущий<br>Михаил Кармакулов</span>
+      </div>
+      <div class="about__copy">
+        <p class="eyebrow">Приятно познакомиться</p>
+        <h2>В центре события — люди. Я лишь создаю пространство, в котором им хорошо.</h2>
+        <div class="about__text">
+          <p>Сценарий собирается вокруг пары, команды или повода. В программе — лёгкий и уместный юмор, спокойные паузы, ненавязчивые интерактивы и музыкальные переходы с профессиональным DJ.</p>
+          <p>Подготовка начинается заранее: встреча, чат, анкеты, тайминг и согласование важных моментов. В день события вам остаётся только быть внутри праздника.</p>
+        </div>
+        <div class="about__facts" aria-label="Ключевые принципы">
+          <span><strong>01</strong> Без неловких конкурсов</span>
+          <span><strong>02</strong> Без заученных шуток</span>
+          <span><strong>03</strong> Всегда про вас</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <div class="section-head">
+        <p class="eyebrow">Персональное предложение</p>
+        <h2>Расскажите о событии — я соберу формат под вас</h2>
+        <p class="section-lead">Пять коротких вопросов. Без обязательств и навязчивых звонков.</p>
+      </div>
+      <form class="quiz" id="quizForm">
+        <div class="quiz__progress">
+          <span id="quizStep">Шаг 1 из 5</span>
+          <div><i id="quizBar"></i></div>
+        </div>
+
+        <fieldset class="quiz__step is-active" data-step="1">
+          <legend>Какой подарок добавить к заявке?</legend>
+          <label class="option"><input type="radio" name="gift" value="Фонтаны" required><span>Холодные фонтаны для выездной регистрации</span></label>
+          <label class="option"><input type="radio" name="gift" value="Дым"><span>Тяжелый дым для первого танца</span></label>
+          <label class="option"><input type="radio" name="gift" value="Без подарка"><span>Пока без подарка</span></label>
+        </fieldset>
+
+        <fieldset class="quiz__step" data-step="2">
+          <legend>Когда планируется мероприятие?</legend>
+          <input class="field" type="date" name="date">
+        </fieldset>
+
+        <fieldset class="quiz__step" data-step="3">
+          <legend>Где пройдет событие?</legend>
+          <input class="field" type="text" name="place" placeholder="Площадка, город или район">
+        </fieldset>
+
+        <fieldset class="quiz__step" data-step="4">
+          <legend>Сколько примерно гостей?</legend>
+          <div class="chips">
+            <label><input type="radio" name="guests" value="10-30"><span>10-30</span></label>
+            <label><input type="radio" name="guests" value="30-50"><span>30-50</span></label>
+            <label><input type="radio" name="guests" value="50-100"><span>50-100</span></label>
+            <label><input type="radio" name="guests" value="100+"><span>100+</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="quiz__step" data-step="5">
+          <legend>Как удобнее связаться?</legend>
+          <input class="field" type="text" name="name" placeholder="Ваше имя">
+          <input class="field" type="tel" name="phone" placeholder="Телефон или ник в мессенджере" required>
+          <div class="chips chips--contact">
+            <label><input type="radio" name="contact" value="WhatsApp" required><span>WhatsApp</span></label>
+            <label><input type="radio" name="contact" value="Telegram"><span>Telegram</span></label>
+            <label><input type="radio" name="contact" value="Звонок"><span>Звонок</span></label>
+          </div>
+          <label class="consent"><input type="checkbox" required> Согласен на обработку персональных данных</label>
+        </fieldset>
+
+        <div class="quiz__actions">
+          <button class="button button--ghost" type="button" id="prevStep">Назад</button>
+          <button class="button button--primary" type="button" id="nextStep">Следующий вопрос</button>
+          <button class="button button--primary is-hidden" type="submit" id="sendQuiz">Отправить заявку</button>
+        </div>
+        <div class="quiz__thanks" id="quizThanks" role="status">
+          <strong>Спасибо за интерес!</strong>
+          <span>Заявка собрана. Подключите обработчик формы или отправку в мессенджер в `script.js`.</span>
+        </div>
+      </form>
+    </section>
+
+    <section class="section benefits" id="format">
+      <div class="benefits__intro">
+        <p class="eyebrow">Мой подход</p>
+        <h2>Лёгкость, за которой стоит точная подготовка</h2>
+      </div>
+      <div class="benefit">
+        <span>01</span>
+        <h3>Гости чувствуют себя спокойно</h3>
+        <p>Интерактивы предлагаются мягко, без давления и неловких обязательств.</p>
+      </div>
+      <div class="benefit">
+        <span>02</span>
+        <h3>Сценарий про вас</h3>
+        <p>Программа собирается из ваших историй, гостей, музыки и желаемого темпа.</p>
+      </div>
+      <div class="benefit">
+        <span>03</span>
+        <h3>Понятная подготовка</h3>
+        <p>До события фиксируются тайминг, технические детали и роли подрядчиков.</p>
+      </div>
+      <div class="benefit">
+        <span>04</span>
+        <h3>Команда ведущий + DJ</h3>
+        <p>Музыкальные переходы и атмосфера держатся в одном сценарном ритме.</p>
+      </div>
+    </section>
+
+    <section class="section package">
+      <div>
+        <p class="eyebrow">Всё под контролем</p>
+        <h2>От первой встречи до последней песни вечера</h2>
+      </div>
+      <ul>
+        <li>Первая встреча и разбор пожеланий</li>
+        <li>Индивидуальный сценарный план</li>
+        <li>Координация с DJ и площадкой по техническим моментам</li>
+        <li>Проведение программы и поддержка темпа события</li>
+      </ul>
+      <a class="button button--primary" href="#quiz">Рассчитать стоимость</a>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="section-head">
+        <p class="eyebrow">Перед бронированием</p>
+        <h2>Честные ответы на важные вопросы</h2>
+      </div>
+      <div class="accordion">
+        <button type="button">За сколько лучше бронировать дату?<span>+</span></button>
+        <div>Чем раньше известна дата и площадка, тем проще закрепить время. Для популярных летних дат лучше писать за несколько месяцев.</div>
+      </div>
+      <div class="accordion">
+        <button type="button">Заключается ли договор?<span>+</span></button>
+        <div>Да, договор можно оформить после обсуждения даты, формата, состава услуг и предоплаты.</div>
+      </div>
+      <div class="accordion">
+        <button type="button">Что происходит после первой встречи?<span>+</span></button>
+        <div>Создается общий чат, собираются анкеты и пожелания, затем готовится сценарная структура и тайминг.</div>
+      </div>
+      <div class="accordion">
+        <button type="button">Подойдет ли программа для разных возрастов?<span>+</span></button>
+        <div>Да, сценарий можно собрать так, чтобы гостям было комфортно независимо от возраста и степени знакомства друг с другом.</div>
+      </div>
+    </section>
+
+    <section class="section contacts" id="contacts">
+      <img src="assets/ceremony.jpg" alt="Михаил проводит церемонию">
+      <div class="contacts__panel">
+        <p class="eyebrow">Начнём с разговора</p>
+        <h2>Расскажите о вашей дате. Остальное обсудим лично.</h2>
+        <div class="contact-links">
+          <a href="tel:+79314088133">+7 931 408-81-33</a>
+          <a href="https://vk.com/djarkhangelsk">VK</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© Михаил Кармакулов · ведущий событий · Архангельск</span>
+    <a href="#top">Наверх</a>
+  </footer>
+
+  <div class="cookie" id="cookieBanner">
+    <p>Сайт использует cookie для аналитики и корректной работы формы.</p>
+    <button class="button button--primary" type="button" id="acceptCookie">Я соглашаюсь</button>
+  </div>
+
+  <dialog class="video-modal" id="videoModal">
+    <button type="button" class="modal-close" id="closeVideo" aria-label="Закрыть">×</button>
+    <div class="modal-player">
+      <span>▶</span>
+      <strong id="modalTitle">Видео</strong>
+      <small>Здесь можно подключить реальный ролик или embed.</small>
+    </div>
+  </dialog>
+
+  <script src="script.js?v=premium-2"></script>
+</body>
+</html>
